@@ -1,41 +1,36 @@
-# Python bytecode
-*.pyc
-__pycache__/
-
-# Ren'Py specific
-*.rpyc
-*.rpy~ 
-*.log
-
-# Build directory
-build/
-bin/
+### Renpy ###
+# Don't track content of these folders #
+########################################
 cache/
+saves/
 
-# Generated files
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Compiled Ren'Py files
+*.rpyb
+*.rpymc
+*.pyc 
 *.pyo
-*.pyd
-*.egg-info/
-dist/
-*.egg
 
-# Virtual environment
-.venv/
-venv/
-ENV/
-env/
+# Ignore all .rpyc files
+*.rpyc
 
-# IDEs and editors
+# But do not ignore .rpyc files in the old-game directory
+!old-game/*.rpyc
+
+# The log file and other misc things #
+######################################
+log.txt
+errors.txt
+traceback.txt
+files.txt
 .vscode/
-.idea/
-*.sublime-project
-*.sublime-workspace
-
-# OS generated files
+.venv/*
 .DS_Store
-Thumbs.db
-
-# Other
-*.bak
-*.tmp
-*.swp
